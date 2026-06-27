@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User | Movimentos</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header-user">
+      <!-- MENU DESKTOP -->
+      <nav class="navbar" style="display: none">
+        <a href="/">
+          <svg
+            width="31"
+            height="49"
+            viewBox="0 0 31 49"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="logo"
+          >
+            <path
+              d="M0 0L15.364 16.5L31 0V41L25.5 35.5V16.5L15.364 26L6 16.5V41L0 35.5V0Z"
+              fill="currentColor"
+            />
+            <path
+              d="M8.5 22.5L31 43.5V48.8316H25L8.5 33V22.5Z"
+              fill="currentColor"
+            />
+            <path d="M8.5 43V36.5L21.5 49H15L8.5 43Z" fill="currentColor" />
+          </svg>
+        </a>
+        <ul class="navlist">
+          <li class="navitem"><a href="#" class="navlink">Início</a></li>
+          <li class="navitem"><a href="#" class="navlink">Treino</a></li>
+          <li class="navitem"><a href="#" class="navlink">Dieta</a></li>
+          <li class="navitem"><a href="#" class="navlink">IMC</a></li>
+          <li class="navitem"><a href="#" class="navlink">Sobre</a></li>
+        </ul>
+        <div class="sign-account">
+          <a href="#" class="btn-trans">Entrar</a>
+          <a href="#" class="btn">Cadastrar</a>
+        </div>
+        <button id="userLogged">
+          User
+          <i class="fas fa-user"></i>
+        </button>
+        <button id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+
+      <!-- MENU USER -->
+      <nav class="navbar-user">
+        <a href="../index.html" class="logo-user">
+          <svg
+            width="31"
+            height="49"
+            viewBox="0 0 31 49"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0L15.364 16.5L31 0V41L25.5 35.5V16.5L15.364 26L6 16.5V41L0 35.5V0Z"
+              fill="white"
+            />
+            <path d="M8.5 22.5L31 43.5V48.8316H25L8.5 33V22.5Z" fill="white" />
+            <path d="M8.5 43V36.5L21.5 49H15L8.5 43Z" fill="white" />
+          </svg>
+        </a>
+        <ul class="navlist-user">
+          <li class="navitem-user">
+            <a href="#" class="navlink-user"
+              ><i class="fa-regular fa-house"></i>Início</a
+            >
+          </li>
+          <li class="navitem-user">
+            <a href="#" class="navlink-user"
+              ><i class="fa-solid fa-dumbbell"></i>Treinos</a
+            >
+          </li>
+          <li class="navitem-user">
+            <a href="#" class="navlink-user"
+              ><i class="fa-brands fa-envira"></i>Dieta</a
+            >
+          </li>
+          <li class="navitem-user">
+            <a href="#" class="navlink-user"
+              ><i class="fa-regular fa-user"></i>Meu Perfil</a
+            >
+          </li>
+          <li class="navitem-user">
+            <a href="#" class="navlink-user"
+              ><i class="fa-solid fa-chart-line"></i>Minhas Atividades</a
+            >
+          </li>
+          <li class="navitem-user">
+            <a href="#" class="navlink-user"
+              ><i class="fa-solid fa-gear"></i>Configurações</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-user">
+      <section class="hero-user">
+        <h1 id="username">Minhas Atividades</h1>
+        <div class="user-info">
+          <div class="daily-workout">
+            <h4>Treino diário</h4>
+            <p>P - <span>P</span> - L - Rest - P - P - L</p>
+            <p>6 / 7</p>
+            <p>oi</p>
+            <p>oi</p>
+            <p>oi</p>
+          </div>
+          <div class="calories"></div>
+          <div class="workout-split">
+            <h4>Divisão de Treino</h4>
+            <p>PPL X 2</p>
+            <form action="POST" class="form-select">
+              <h3>Selecione sua divisão de treino:</h3>
+              <select name="workout-split" id="workout-split">
+                <option value="">Selecione...</option>
+                <option value="ppl-upper/lower">PPL - Upper/Lower</option>
+                <option value="upper-lower">Upper/Lower X 2</option>
+              </select>
+              <button>Salvar</button>
+            </form>
+          </div>
+
+          <div class="calories-left">
+            <h4>Calorias <i class="fa-solid fa-fire"></i></h4>
+            <p>300 kcal</p>
+          </div>
+          <div class="weight">
+            <h4>Peso</h4>
+            <p>77.7</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
